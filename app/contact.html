@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Контакты | Веб-студия без id и class</title>
+    <link rel="stylesheet" href="css/style.css" id="stylesheat">
+</head>
+<body>
+<!-- 
+    /* header | Логотип и навигация */
+    -->
+<header>
+    <div><img alt="Веб-студия «ClearTags»" src="img/logo.png"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="#drop">Услуги</a>
+                <ul>
+                    <li><a href="#">Табличная вёрстка</a></li>
+                    <li><a href="#">Переход с JS на чистый jQuery</a></li>
+                    <li><a href="#">Продвижение сайта в Апорт</a></li>
+                </ul>
+            </li>
+            <li><a href="#active">Контакты</a></li>
+            <li><a href="brif.html">Заполнить Бриф</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- 
+    /* main | Основной контент */
+    -->
+<main itemscope itemtype="http://schema.org/Organization">
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h1>Контакты</h1>
+            <p>Офис компании <span itemprop="name">«ClearTags»</span> находится
+            в городе Санкт-Петербург. Будем рады видеть Вас в любое время.</p>
+            <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="addressLocality">г. Санкт-Петербург</span>, м.
+                Пролетарская,<br>
+                <span itemprop="streetAddress">пр. Обуховской обороны, д.
+                116</span>, БЦ "Троицкое поле", оф. 666
+            </address>
+            <b>E-mail:</b> <span itemprop="email">pr@cleartags.me</span>
+            <p><b>Телефон:</b> <span itemprop="telephone">+7 495 739–70–00</span></p>
+            <form action="#" class="form" method="post">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-g">
+                            <label class="form-g-title" for="username">Ваше имя:</label>
+                            <input id="username" name="username" placeholder="Иван Иванов" type="text">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-g">
+                            <label class="form-g-title" for="phone">Телефон:</label>
+                            <input id="phone" name="phone" placeholder="+7 (___) ___-__-__" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-g">
+                            <label class="form-g-title" for="mess">Сообщение:</label> 
+                            <textarea id="mess" name="mess"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 center separate">
+                        <div class="form-g">
+                            <input type="submit" value="Отправить">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-6">
+            <div id="map" class="yaMap"></div>
+        </div>
+    </div>
+</div>
+</main>
+<!-- 
+    /* footer | Подвал */
+    -->
+<footer>
+    © 2016 | Веб-студия «ClearTags»
+</footer>
+
+<!-- <js> -->
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+

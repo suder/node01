@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Заполнение брифа | Веб-студия без id и class</title>
+    <link rel="stylesheet" href="css/style.css" id="stylesheat">
+</head>
+<body>
+<!-- 
+    /* header | Логотип и навигация */
+    -->
+<header>
+    <div><img alt="Веб-студия «ClearTags»" src="img/logo.png"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="#drop">Услуги</a>
+                <ul>
+                    <li><a href="#">Табличная вёрстка</a></li>
+                    <li><a href="#">Переход с JS на чистый jQuery</a></li>
+                    <li><a href="#">Продвижение сайта в Апорт</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Контакты</a></li>
+            <li><a href="#active">Заполнить Бриф</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- 
+    /* main | Основной контент */
+    -->
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h1>Заполнение брифа</h1>
+                <form action="#" class="form" method="post">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="form-g">
+                                <label class="form-g-title" for="company">Название компании:</label> <input id="company" name="company" placeholder="ООО 'Компания'" type="text">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-g">
+                                <label class="form-g-title" for="name">Контактное лицо:</label> <input id="name" name="name" placeholder="Иванов Иван"
+                                type="text">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-g">
+                                <label class="form-g-title" for="phone">Телефон:</label> <input id="phone" name="email" placeholder="+7 (___) ___-__-__"
+                                type="text">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-g">
+                                <label class="form-g-title" for=
+                                "email">Электронная почта:</label> <input id=
+                                "email" name="email" placeholder=
+                                "mail@company.com" type="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-g">
+                                <label class="form-g-title" for=
+                                "company">Расскажите о Вашей компании:</label> 
+                                <textarea id="company" name="company"
+                                placeholder=
+                                "Чем Вы занимаетесь? Миссия компании, слоган"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-g">
+                                <label class="form-g-title" for="project">Суть
+                                проекта:</label> 
+                                <textarea id="project" name="project"
+                                placeholder=
+                                "Это сайт с нуля или редизайн уже имеющегося? Чем Вас не устраивает нынешний сайт (если есть)">
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="form-g-title">Какие результаты вы
+                            хотели бы получить?</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-g">
+                                <label for="checkbox_1">Увеличение
+                                посещаемости, развитие проекта:</label>
+                                <input class="checkbox" id="checkbox_1" name=
+                                "results[]" type="checkbox" value="1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-g">
+                                <label for="checkbox_2">Продвижение конкретных
+                                продуктов и услуг:</label> <input class=
+                                "checkbox" id="checkbox_2" name="results[]"
+                                type="checkbox" value="2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-g">
+                                <label for="checkbox_3">Улучшение
+                                имиджа:</label> <input class="checkbox" id=
+                                "checkbox_3" name="results[]" type="checkbox"
+                                value="3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-g">
+                                <label for="checkbox_4">Продажи через
+                                интернет:</label> <input class="checkbox" id=
+                                "checkbox_4" name="results[]" type="checkbox"
+                                value="4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-g">
+                                <label for="checkbox_5">Сервисы для сотрудников
+                                компании:</label> <input class="checkbox" id=
+                                "checkbox_5" name="results[]" type="checkbox"
+                                value="5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-g">
+                                <label class="form-g-title" for=
+                                "site">Приведите примеры сайтов, которые вам
+                                нравятся (чем?):</label> 
+                                <textarea id="site" name="site" placeholder=
+                                "www.rbc.ru - Потому-что вот так вот..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-g">
+                                <label class="form-g-title" for="war">Основные
+                                конкуренты и их сайты:</label> 
+                                <textarea id="war" name="war" placeholder=
+                                "Перечислите основных конкурентов Вашей компании с указанием их сайтов">
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="form-g">
+                                <label class="form-g-title">Тип ресурса:</label>
+                                <select name="tip">
+                                    <option value="1">
+                                        Интернет-магазин
+                                    </option>
+                                    <option value="2">
+                                        Сайт-визитка
+                                    </option>
+                                    <option value="3">
+                                        Корпоративный сайт
+                                    </option>
+                                    <option value="4">
+                                        Информационный портал
+                                    </option>
+                                    <option value="5">
+                                        Промо-сайт
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-g">
+                                <label class="form-g-title">Возраст оснавной аудитории:</label>
+                                <select name="age">
+                                    <option value="1">
+                                        до 18
+                                    </option>
+                                    <option value="2">
+                                        от 18 до 25
+                                    </option>
+                                    <option value="3">
+                                        от 25 до 40
+                                    </option>
+                                    <option value="4">
+                                        от 40
+                                    </option>
+                                    <option selected value="5">
+                                        Не имеет значения
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-g">
+                                <label class="form-g-title">Что с дизайном?</label>
+                                <select name="design">
+                                    <option value="1">
+                                        Нужен, на усмотрение нашего дизайнера
+                                    </option>
+                                    <option value="2">
+                                        Нужен, по Вашим желаниям
+                                    </option>
+                                    <option value="3">
+                                        Нужен, в соответствии с фирменным
+                                        стилем компании
+                                    </option>
+                                    <option value="4">
+                                        Не нужен - есть готовый макет
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="form-g-title">Прикрепить важные файлы
+                            (brand-book, макеты...)</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-g">
+                                <div class="input-file">
+                                    <label for="file">Выбрать файлы</label>
+                                    <input id="file" name="file" type="file">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 center separate">
+                            <div class="form-g">
+                                <input type="submit" value="Отправить бриф">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</main>
+<!-- 
+    /* footer | Подвал */
+    -->
+<footer>
+    © 2016 | Веб-студия «ClearTags»
+</footer>
+
+<!-- <js> -->
+<script src="js/script.js"></script>
+</body>
+</html>
+
+

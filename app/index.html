@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Веб-студия без id и class</title>
+    <link rel="stylesheet" href="css/style.css" id="stylesheat">
+</head>
+<body>
+<!-- 
+    /* header | Логотип и навигация */
+    -->
+<header>
+    <div><img alt="Веб-студия «ClearTags»" src="img/logo.png"></div>
+    <nav>
+        <ul>
+            <li><a href="#active">Главная</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="#drop">Услуги</a>
+                <ul>
+                    <li><a href="#">Табличная вёрстка</a></li>
+                    <li><a href="#">Переход с JS на чистый jQuery</a></li>
+                    <li><a href="#">Продвижение сайта в Апорт</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Контакты</a></li>
+            <li><a href="brif.html">Заполнить Бриф</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- 
+    /* main | Основной контент */
+    -->
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <h1>Веб-студия «ClearTags»</h1>
+                <p><b>«ClearTags»</b> - веб-студия базирующаяся в
+                Санкт-Петербурге. Мы - команда из увлеченного своим делом
+                высококлассного специалиста. <del>Отличительной чертой нашей
+                работы является отсутствие в наших макетах привычнх аттрибутов
+                <code>class</code> и <code>id</code>. В связи с этим, на данный
+                момент, нами не было реализовано ни одного проекта, но мы не
+                унываем и продолжаем ждать своего "заказчика-извращенца".</del>
+                <ins>Приступили работать с формами, а следовательно мы
+                вынуждены изменить нашим принципам не использовать
+                <code>class</code> и <code>id</code>. Теперь будем полноценной
+                веб-студией.</ins></p>
+                <div class="alert alert-success">
+                    Наше сотрудничество с Вами мы предлагаем начать с <a href=
+                    "brif.html">заполнения Брифа</a> на разработку сайта.
+                </div>
+                <div class="modal_select">
+                    <a href="#modal_open">Модальное окно</a>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="image_col"><img alt="Изображение..." src="https://placeholdit.imgix.net/~text?txtsize=33&txt=img&w=900&h=250"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <!-- <Услуги> -->
+                <section>
+                    <h2>Наши услуги</h2>
+                    <ul>
+                        <li>
+                            <img alt="Дизайн сайта в AutoCad" src=
+                            "img/icons/paint.svg"> <a href="#">Дизайн сайта в
+                            AutoCad</a><span>87,000 руб.</span>
+                        </li>
+                        <li>
+                            <img alt="Табличная верстка" src=
+                            "img/icons/table.svg"> <a href="#">Табличная
+                            верстка</a><span>45,000 руб.</span>
+                        </li>
+                        <li>
+                            <img alt="С JS на чистый jQuery" src=
+                            "img/icons/js.svg"> <a href="#">С JS на чистый
+                            jQuery</a><span>8,200 руб.</span>
+                        </li>
+                        <li>
+                            <img alt="Продвижение в Апорт" src=
+                            "img/icons/aport.svg"> <a href="#">Продвижение в
+                            Апорт</a><span>10,000 руб.</span>
+                        </li>
+                    </ul>
+                </section><!-- </Услуги> -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <!-- <Новости> -->
+                <h2>Новости компании</h2>
+                <article>
+                    <h3><a href="brif.html">Появилась возможность заполнить
+                    Бриф</a></h3>
+                    <p><time datetime="2016-03-20">23-03-2016</time> Теперь Вы
+                    можете заполнить бриф на нашем сайте. Это значительно
+                    упростит нам работу.</p>
+                </article>
+                <article>
+                    <h3><a href="#">Веб-студия «ClearTags» официальный партнёр
+                    «Что-то с 1С»</a></h3>
+                    <p><time datetime="2016-03-20">20-03-2016</time> Наша
+                    веб-студия «ClearTags» в марте 2016 года стала официальным
+                    партнёром группы компаний «Что-то с 1С».</p>
+                </article>
+                <article>
+                    <h3><a href="#">Наше выступление на конференции «Худшие
+                    веб-студии года»</a></h3>
+                    <p><time datetime="2016-03-16">16-03-2016</time> 15 марта в
+                    Гатчине прошла конференция «Худшие веб-студии года», на
+                    которой с докладом выступил наш арт-директор Дмитрий
+                    Флексбоксов.</p>
+                </article><!-- </Новости> -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <!-- <Отзывы> -->
+                <h2>Отзывы о нас</h2>
+                <div>
+                    <blockquote data-person="Владимир Петров (ООО «Ребята»)">
+                        Студия «ClearTags» - это профессионалы, которые делают
+                        из Вас профессионалов легко и просто! Макет нашего
+                        лэндинга был сверстан в кратчайшие сроки - всего за 12
+                        месяцов.<br>
+                    </blockquote>
+                    <blockquote data-person="Павел Жуков (ТРК Россия)">
+                        Наша компания в лице всего коллектива хотела бы
+                        выразить благодарность студии веб-разработок
+                        «ClearTags» за создание нашего сайта на Pascal. Мы
+                        очень довольны результатом.<br>
+                    </blockquote>
+                </div><!-- </Отзывы> -->
+            </div>
+        </div>
+    </div>
+</main>
+<!-- 
+    /* footer | Подвал */
+    -->
+<footer>
+    © 2016 | Веб-студия «ClearTags»
+</footer>
+
+<!-- 
+    /* Модальное окно */
+    -->
+<div id="modal_open" class="modal_box">
+    <a href="#" class="modal_overlay"></a>
+    <div class="modal_content">
+        <p>Я контент в модальном окне...</p>
+    <div class="modal_close">
+        <a href="#" class="modal_close">Закрыть</a>
+    </div>
+    </div>
+</div>
+
+<!-- <js> -->
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
